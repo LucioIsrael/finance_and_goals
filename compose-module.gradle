@@ -43,12 +43,13 @@ dependencies {
     implementation Compose.ui
     implementation Compose.uiToolingPreview
     implementation Compose.hiltNavigationCompose
-    implementation Compose.material
+    implementation Compose.material3
+    implementation Compose.material3WindowSize
     implementation Compose.runtime
     implementation Compose.navigation
     implementation Compose.viewModelCompose
     implementation Compose.activityCompose
-
+    
     kapt DaggerHilt.hiltCompiler
     implementation DaggerHilt.hiltAndroid
 
@@ -69,5 +70,5 @@ dependencies {
     androidTestImplementation Testing.composeUiTest
     androidTestImplementation Testing.mockk
     androidTestImplementation Testing.mockWebServer 
-    androidTestImplementation Testing.hiltTesting 
+    androidTestImplementation Testing.hiltTesting
 }
